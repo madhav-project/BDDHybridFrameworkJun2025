@@ -28,7 +28,7 @@ public class Base {
 		return driver;
 
 	}
-
+	
 	/**
 	 * This method will close the opened browser
 	 */
