@@ -18,10 +18,9 @@ public class Base {
 	/**
 	 * @return the driver object after launching the application URL.
 	 */
-	
-	
+
 	public WebDriver initializeWebDriver() {
-		System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(ReadProperties.implicitWaitTime(), TimeUnit.SECONDS);
 		driver.manage().window().maximize();
