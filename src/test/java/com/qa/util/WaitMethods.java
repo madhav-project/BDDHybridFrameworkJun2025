@@ -39,6 +39,7 @@ public class WaitMethods {
 	
 	public static WebElement waitFor(WebDriver driver, WebElement elem, String waitType, Scenario scenario) {
 
+		@SuppressWarnings("deprecation")
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(ReadProperties.getFluentWaitTime(), TimeUnit.SECONDS)
 				.pollingEvery(60, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class);
