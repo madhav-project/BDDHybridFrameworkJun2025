@@ -32,7 +32,7 @@ public class LoginPage {
 
 	// Page Class Constructor
 	/**
-	 * @param driver 
+	 * @param driver - to refer the Webdriver
 	 * @param scenario
 	 */
 	public LoginPage(WebDriver driver, Scenario scenario) {
